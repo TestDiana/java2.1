@@ -1,10 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        int ticketPriceWithPenny = 1000_00;
-        int miles = ticketPriceWithPenny / 20 / 100;
-
+        BonusMilesService service = new BonusMilesService();
+        int price = 10_000;
+        int miles = service.calculate(price);
         System.out.println(miles);
-
-
     }
 }
